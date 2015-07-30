@@ -421,3 +421,46 @@ Small Device Styles
   }
 
 }
+
+#menu {
+  z-index: 100;
+  left:0px;
+  top: 0px;
+  height: 0px;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  background: url(../images/nav-bg.gif) #353535;
+  border-bottom: 4px solid #434343;
+}
+
+#menu nav{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+  text-align: center;
+}
+
+#menu nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+#menu nav li a:link, #menu nav li a:visited {
+    display: block;
+    width: 150px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: goldenrod;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#menu nav li a:hover, #menu nav li a:active {
+    background-color: #7A991A;
+}
