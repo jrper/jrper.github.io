@@ -1,11 +1,13 @@
 ---
-layout: default
-title: Videos
+title: My Videos
 ---
 
-<h3> An Elevator pitch of my work up until 2013</h3>
-<iframe width="420" height="315" src="https://www.youtube.com/embed/6CRepOHA4FA" frameborder="0" allowfullscreen></iframe>
+{% for post in site.categories.videos %}
+    <h3>{{ post.title }}</h3>
+    <iframe width="420" height="315" src="http://www.youtube.com/embed/{{ post.shortcode}}" frameborder="0" allowfullscreen></iframe>
+    {{ post.content }}
+{% endfor %}
 <h3> Two dimensional jetting in a cryogenic helium release</h3>
- <iframe width="420" height="315" src="https://www.youtube.com/embed/CFtGnMZi8LM" frameborder="0" allowfullscreen></iframe>
+ <iframe width="420" height="315" src="http://www.youtube.com/embed/CFtGnMZi8LM" frameborder="0" allowfullscreen></iframe>
 <h3> Air pollution modelling with cloud microphysics </h3>
-<iframe width="420" height="315" src="https://www.youtube.com/embed/hruk8XO11YI" frameborder="0" allowfullscreen></iframe>
+<iframe width="420" height="315" src="http://www.youtube.com/embed/hruk8XO11YI" frameborder="0" allowfullscreen></iframe>
