@@ -360,6 +360,7 @@ Full-Width Styles
 
 #main_content {
   padding-top: 40px;
+  padding-left: 160px;
 }
 
 #footer_wrap {
@@ -453,8 +454,8 @@ Small Device Styles
     display: block;
     width: 150px;
     font-weight: bold;
-    color: #FFFFFF;
-    background-color: goldenrod;
+    color: White;
+    background-color: Indigo;
     text-align: center;
     padding: 4px;
     text-decoration: none;
@@ -462,5 +463,21 @@ Small Device Styles
 }
 
 #menu nav li a:hover, #menu nav li a:active {
-    background-color: #7A991A;
+    color: Aqua;
+    background-color: Navy;
+}
+
+img.TextWrapped {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: text-top;
+    display: inline-block;
+}
+
+img.Logo {
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
 }
