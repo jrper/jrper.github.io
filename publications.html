@@ -2,80 +2,13 @@
 layout: default
 title: Publications List
 ---
-	<h3> 2015 </h3>
-        <p><a href=
-	      "http://onlinelibrary.wiley.com/doi/10.1002/fld.4078/abstract">
-	      Compressive advection and multi-component methods for
-              interface-capturing
-	    </a><br>
-	    D. Pavlidis, J.L.M.A. Gomes, Z. Xie, J.R. Percival, C.C. Pain
-	    and O.K. Matar; 
-	    <em> International Journal for Numerical Methods in Fluids</em><br>
-          <a href="">
-	      Reservoir Modeling for Flow Simulation by Use of
-              Surfaces, Adaptive Unstructured Meshes, and an
-              Overlapping-Control-Volume Finite-Element Method
-	    </a><br>
-	    M. D. Jackson, J. R. Percival, P. Mostaghimi, B. Tollit, D.
-            Pavlidis, C. C. Pain, J. Gomes, A. H. Elsheikh, P. Salinas, A.
-            Muggeridge and M. Blunt;
-	    <em> SPE </em><br>
-          <a href="http://onlinelibrary.wiley.com/doi/10.1111/gfl.12129/full">
-	     Multiphase flow simulation through porous media with explicitly
-             resolved fractures
-	  </a><br>
-	  K. Su, J.-P. Latham, D. Pavlidis, J. Xiang, F. Fang, P. Mostaghimi,
-	  J. R. Percival, C. C. Pain and M. D. Jackson;
-	  <em> Geofluids</em><br>
-          <a
-            href="http://link.springer.com/article/10.1007/s11004-014-9579-1">
-	    Anisotropic Mesh Adaptivity and Control Volume Finite Element
-	    Methods for Numerical Simulation of Multiphase Flow in Porous
-	    Media
-	  </a><br>
-          P. Mostaghimi, J. R. Percival, D. Pavlidis, R. J. Ferrier, J.
-          L. M. A. Gomes, F. J. Gorman, M. D. Jackson, S. J. Neethling
-          and C. C. Pain;
-	  <em>Mathematical Geosciences</em> <br>
-   <h3> 2014 </h3>	       
-          <a
-             href="http://www.sciencedirect.com/science/article/pii/S0301932214001360">
-	     Two-and three-phase horizontal slug flow simulations using an
-             interface-capturing compositional approach
-	  </a><br>
-	  D. Pavlidis, Z. Xie, J. R. Percival, J. L. M. A. Gomes,
-	  C. C. Pain and O. K. Matar;
-	  <em>International Journal of Multiphase Flow</em><br>
-          <a
-	     href="http://www.sciencedirect.com/science/article/pii/S0301932214001438">
-	     Adaptive unstructured mesh modelling of multiphase flows
-	  </a><br>
-	  Z. Xie, D. Pavlidis, J. R. Percival, J. L. M. A. Gomes,
-	  C. C. Pain and O. K. Matar;
-	  <em> International Journal of Multiphase Flow</em><br>
-          <a href=
-	  "http://www.sciencedirect.com/science/article/pii/S0301932214001815">
-            Control volume finite element modelling of segregation of
-            sand and granular flows in fluidized beds 
-	  </a><br>
-	  J. R. Percival, D. Pavlidis, Z. Xie, J. L. M. Gomes, M. Sakai,
-	  Y. Shigeto, H. Takahashi, O. K. Matar and C. C. Pain;
-          <em>International Journal of Multiphase Flow</em></p>
-    <h3> 2013 </h3>	
-         <p><a href="http://dx.doi.org/10.1007/s00332-012-9135-4"> 
-	    G-Strands
-	 </a><br>
-         D.D. Holm, R.I. Ivanov and J.R. Percival;
-	 <em>Journal of Nonlinear Science</em></p>
-	 <h3> 2011 </h3>
-	  <p><a href="http://dx.doi.org/10.1088/1751-8113/44/26/265205">
-	     Waltzing peakons and compacton pairs in a cross-coupled
-	     Camassa-Holm equation
-	  </a><br>
-	  C.J. Cotter, D.D. Holm, R.I. Ivanov and J.R. Percival;
-	  <em>Journal of Physics A-Mathematical and Theoretical</em><br>
-	  <a href="http://dx.doi.org/10.1098/rspa.2010.0124">
-	     The square root depth wave equations
-	  </a><br>
-	  C.J. Cotter, D.D. Holm, and J.R. Percival;
-	  <em>Proceedings of the Royal Society A-Mathematical Physical and Engineering Sciences</em></p>
+
+{% for publication in site.publications reversed %}
+  {% assign currentdate = publication.date | date: "%Y" %}
+  {% if currentdate != date %}
+    <h3 id="y{{post.date | date: "%Y"}}">{{ currentdate }}</h3>
+    {% assign date = currentdate %}
+  {% endif %}
+  <a href={{ publication.paper-url }}>{{ publication.title }}</a><br>
+  {{ publication.authors }}; <em> {{ publication.journal }}<br> </em>
+{% endfor %}

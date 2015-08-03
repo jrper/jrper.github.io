@@ -1,8 +1,15 @@
 paginate: 5
 paginate_path: "/blog/page:num/"
+collections:
+  publications:
 defaults:
   -
     scope:
       path: "" # an empty string here means all files in the project
     values:
       layout: "default"
+  -
+    scope:
+      path: "videos" # an empty string here means all files in the project
+    values:
+      layout: videos
