@@ -1,9 +1,7 @@
 ---
+title: My blog
 ---
-<div id="title">
-    <h1> My blog</h1>
-</div>
-<hr>
+
 <ul class="posts">
     {% for post in paginator.posts %}
       <li>
@@ -39,3 +37,4 @@
   {% endif %}
 </div>
 {% endif %}
+<a href={{ site.url }}/blog.html>Full index</a>
