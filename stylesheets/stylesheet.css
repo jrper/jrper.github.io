@@ -450,11 +450,13 @@ Small Device Styles
     margin: 0;
     padding: 0;
     overflow: hidden;
+    width: 150px;
 }
 
 
 #menu li a:link, #menu li a:visited {
     display: block;
+    max-width: 200px;
     width: 150px;
     font-weight: bold;
     color: White;

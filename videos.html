@@ -8,7 +8,7 @@ title: My Videos
     <iframe width="420" height="315" src="http://www.youtube.com/embed/{{ post.shortcode}}" frameborder="0" allowfullscreen></iframe><br>
         {{ post.content }}
    {% else %}
-     <a href={{ post.url }}><h3>{{ post.title }}<h3></a>
+     <a href={{ post.url }}><h4>{{ post.title }}<h4></a>
    {% endif %}  
     {% if forloop.index ==5 %}	
     <h2> Older videos: </h2>
