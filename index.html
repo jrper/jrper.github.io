@@ -10,34 +10,48 @@ title: Home page
 </div>
 
 <h2 id="presentations" style="clear: left;"> Presentations </h2>
-<p> Presentation to Norms group October 2013: 
-    <a href="http://jrper.github.io/talks/NORMS/MeshAdaptivity.pptx"> 
-       Mesh Adaptivity
+<p> 
+   Presentation to Norms group October 2013: 
+   <a href="http://jrper.github.io/talks/NORMS/MeshAdaptivity.pptx"> 
+      Mesh Adaptivity
+   </a> <br>
+   Presentation to Norms group October 2014: Mesh adaptivity (<a href="talks/NORMS/Percival-JR_NORMS_mesh_adaptivity_121114.pdf"> pdf</a>) (<a
+      href="talks/NORMS/Percival-JR_NORMS_mesh_adaptivity_121114.pptx">pptx</a>)
+   <br>
+   Presentation to APS-DFD November 2014: Mesh adaptivity (<a
+     href="talks/APS-DFD2014/APStalk-jrper.pdf">pdf</a>) (<a
+     href="talks/APS-DFD2014/APStalk-jrper-1.pptx">pptx</a>) 
+</p>
+<h2> Latest Publications </h2>
+{% for publication in site.publications reversed  %}
+  {% if forloop.index <= 2 %}
+     {% assign currentdate = publication.date | date: "%Y" %}
+     <a href={{ publication.paper-url }}>{{ publication.title }}</a><br>
+     {{ publication.authors }};
+      <em> {{ publication.journal }}</em>
+      ({{ currentdate }})<br> 
+  {% endif %}
+{% endfor %}
+<br>
+<a href={{ site.url }}/publications.html> More papers </a>
+<h2 id=links> Links </h2>
+    <a href="http://fluidityproject.github.io"> 
+       <img class=Logo src=images/fluiditylogo-transparent.png width=80px>
+       Main <em>Fluidity</em> Github pages site 
     </a> <br>
-    Presentation to Norms group October 2014: Mesh adaptivity (<a href="talks/NORMS/Percival-JR_NORMS_mesh_adaptivity_121114.pdf"> pdf</a>) (<a
-    href="talks/NORMS/Percival-JR_NORMS_mesh_adaptivity_121114.pptx">pptx</a>)
-    <br>
-          Presentation to APS-DFD November 2014: Mesh adaptivity (<a
-            href="talks/APS-DFD2014/APStalk-jrper.pdf">pdf</a>) (<a
-            href="talks/APS-DFD2014/APStalk-jrper-1.pptx">pptx</a>) </p>
- <h2 id=links> Links </h2>
-     <a href="http://fluidityproject.github.io"> 
-        <img class=Logo src=images/fluiditylogo-transparent.png width=80px>
-        Main <em>Fluidity</em> Github pages site 
-     </a> <br>
-     <a href="http://multifluids.github.io">
-         <img class=Logo src=images/IC-FERST-logo.png width=80px> 
-         Main IC-Ferst/multifluids Github pages site 
-     </a> <br>
-     <a href="http://www.imperial.ac.uk/engineering/departments/earth-science/research/research-groups/amcg/">
-         <img class=Logo src=images/AMCG-logo.gif width=80px>
-         Applied Modelling and Computation Group
-     </a><br>
-     <a href="http://www.imperial.ac.uk/engineering/departments/earth-science/research/research-groups/norms/">
-	 <img class=Logo src=images/NORMS.gif width=80px> 
-         Novel Reservoir Modelling and Simulation Group
-     </a><br>
-     <a href="http://www.imperial.ac.uk/">
+    <a href="http://multifluids.github.io">
+       <img class=Logo src=images/IC-FERST-logo.png width=80px> 
+       Main IC-Ferst/multifluids Github pages site 
+    </a> <br>
+    <a href="http://www.imperial.ac.uk/engineering/departments/earth-science/research/research-groups/amcg/">
+       <img class=Logo src=images/AMCG-logo.gif width=80px>
+       Applied Modelling and Computation Group
+    </a><br>
+    <a href="http://www.imperial.ac.uk/engineering/departments/earth-science/research/research-groups/norms/">
+       <img class=Logo src=images/NORMS.gif width=80px> 
+       Novel Reservoir Modelling and Simulation Group
+    </a><br>
+    <a href="http://www.imperial.ac.uk/">
 	 <img class=Logo src=images/ImperialLogo.png width=80px>
          Imperial College London
-     </a><br>
+    </a><br>
