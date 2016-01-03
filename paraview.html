@@ -1,5 +1,38 @@
 ---
-title: Paraview Tips and Plugins
+title: ParaView Tips and Plugins
 ---
 <h2> About ParaView </h2>
     <a href="http://www.paraview.org"> ParaView </a>  is an open-source data analysis and visualization application developed by <a href=http://www.kitware.com> Kitware</a>. It is the visualization tool of choice for AMCG for visualization of Fluidity output.
+
+<h2> ParaView Plugins </h2>
+ 
+ Paraview allows for <a href=http://www.paraview.org/Wiki/ParaView/Plugin_HowTo>user developed plugins</a>, written in C++, to extend its functionality. At their most basic, paraview plugins can simply be new VTK filters, extending the pipeline to generate new output, along with an xml file describing the input requirements and output obligations of the filter.
+
+<h2> A skeleton filter </h2>
+
+The files for a basic C++ vtk filter looks something like the following:
+
+<ul>
+	<li><a href="{{ site.url }}/paraview/Template.xml.md">Template.xml</a></li>
+	<li><a href="{{ site.url }}/paraview/vtkTemplate.h.md">vtkTemplate.h</a></li>
+	<li><a href="{{ site.url }}/paraview/vtkTemplate.cxx.md">vtkTemplate.cxx</a></li>
+</ul>
+
+<h2> Compiling plugins </h2>
+
+ParaView and VTK both use CMake as their build system. CMake, another kitware product, attempts to automate the process for files based on the recursive processing of text files named <em>CMakeLists.txt</em> placed within the directory structure. For a ParaView plugin the required file looks something like the following:
+
+<pre><code>
+FIND_PACKAGE(ParaView REQUIRED)
+INCLUDE(${PARAVIEW_USE_FILE})
+
+ADD_PARAVIEW_PLUGIN(
+  Template "0.0"
+  SERVER_MANAGER_XML Template.xml
+  SERVER_MANAGER_SOURCES vtkTemplate.h vtkTemplate.cxx
+  )
+</code></pre>
+
+For the macros presented here to resolve it is necessary to provide a full development installation of ParaView. If a packaged version is not available for your system this will require building your own version from source. This is typically a fairly simple process once again using cmake. Full instructions are available from the ParaView website. 
+
+<h2> A Control Volume filter</h2>
