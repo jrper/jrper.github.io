@@ -2,7 +2,7 @@
 title: Example - Template.xml 
 ---
 
-```xml
+{% highlight xml %}
 <ServerManagerConfiguration>
   <ProxyGroup name="filters">
     <SourceProxy name="vtkTemplate" class="vtkTemplate" label="Template Filter">
@@ -22,4 +22,4 @@ title: Example - Template.xml
     </SourceProxy>
   </ProxyGroup>
 </ServerManagerConfiguration>
-```
+{% endhighlight %}
