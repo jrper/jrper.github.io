@@ -31,6 +31,6 @@ pylab.ylabel('log of frequency')
 pylab.title('logarithmic frequency of Test scores')
 {% endhighlight %}
 
-![alt text]({{ site.url }}/images/TestScores.pn "Graph of Test scores")
+![alt text]({{ site.url }}/images/TestScores.png "Graph of Test scores")
 
 
