@@ -36,3 +36,14 @@ ADD_PARAVIEW_PLUGIN(
 For the macros presented here to resolve it is necessary to provide a full development installation of ParaView. If a packaged version is not available for your system this will require building your own version from source. This is typically a fairly simple process once again using cmake. Full instructions are available from the ParaView website. 
 
 <h2> A Control Volume filter</h2>
+
+As a further example, lets build a more useful filter, in this case one to generate the control volume tesselation within a P1DG fluidity output:
+
+<ul>
+	<li><a href="paraview/ShowCVs.xml.html">ShowCVs.xml</a></li>
+	<li><a href="paraview/vtkShowCVs.h.html">vtkShowCVs.h</a></li>
+	<li><a href="paraview/vtkShowCVs.cxx.html">vtkShowCVs.cxx</a></li>
+</ul>
+
+<img class=TextWrapped src="images/FEM_Example.png"><img class=TextWrapped src="images/CV_Example.png">
+
