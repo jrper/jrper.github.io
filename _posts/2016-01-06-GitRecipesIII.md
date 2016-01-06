@@ -39,6 +39,7 @@ pick 8f6c9b0 Another blog post on git.
 {% endhighlight %}
 
 The commented lines at the bottom provide a note memoir on what can be done. Effectively the incremental changes listed can be
+
 * Reordered, by reordering the lines in the list
 * Relabelled by using the `reword` option to change the commit message
 * Ammended, using the `edit` option to stop at that commit for a manual change
@@ -60,3 +61,11 @@ Scans the log of commit messages and sets commits which begin like `squash!5b901
 git commit --squash 123456
 git commit --fixup 123456
 {% endhighlight %}
+
+## Further references
+
+* [Git documentation](https://git-scm.com/documentation) at git-scm.com
+* [Git tutorial](http://gitimmersion.com/index.html) at gitimmersion.com
+* [Git tutorial](http://swcarpentry.github.io/git-novice/) at software carpentry
+
+
