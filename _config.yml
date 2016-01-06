@@ -13,4 +13,10 @@ defaults:
       path: "videos" # an empty string here means all files in the project
     values:
       layout: videos
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      layout: posts
 exclude: [ scripts ]
