@@ -13,11 +13,11 @@ title: Teaching Page
 Mathematical descriptions of the equations governing physical processes are often in the form of partial differential equations (PDEs). Variable values are functions of time and satisfy relationships between variables themselves and their higher partial derivatives. Some architypal examples :
 <ul>
 <li>The heat equation, \(\frac{\partial T}{\partial t}=\kappa\frac{\partial^{2}T}{\partial x^{2}},\)</li>
-<img src=./teaching/heat.gif>
+<img  class="displayed" src=./teaching/heat.gif>
 <li>The wave equation, \(\frac{\partial^{2}a}{\partial t^{2}}=c^{2}\frac{\partial^{2}a}{\partial x^{2}},\)</li>
-<img src=./teaching/wave.gif>
+<img class="displayed" src=./teaching/wave.gif>
 <li>The advection-diffusion equation \(\frac{\partial\tau}{\partial t}+u\frac{\partial\tau}{\partial x}=\kappa\frac{\partial^{2}\tau}{\partial^{2}x}.\)</li>
-<img src=./teaching/adv_dif.gif>
+<img  class="displayed"  src=./teaching/adv_dif.gif>
 </ul>
 Frequently we would like to generate sufficiently accurate numerical solutions to these equations using a computer. However computers (and humans) possess only a finite amount of memory to store the results of their calculations, while even a simple a problem domain such as the real numbers between 0 and 1 provides an uncountably infinite number of locations for which variable data would be required. As such, it is necessary to discretize the problem down to operations on a finite dimensional space on which is tractable to perform calculations. There are a number of approaches aimed at achieving this. In this course we will discuss several approaches you may already be familiar with, then introduce the finite element method, which you may not.
 
