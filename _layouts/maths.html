@@ -4,14 +4,20 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="James Percival : News">
+    <meta name="description" content="James Percival Github pages">
     <link rel="stylesheet" type="text/css" media="screen"
       href="{{ site.url }}/stylesheets/stylesheet.css">
     <title>{{ page.title }}</title>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>	     
     {% feed_meta %}
   </head>
   <body>
+  <script type="text/x-mathjax-config"> 
+    MathJax.Hub.Config({ 
+        "HTML-CSS": { scale: 125, linebreaks: { automatic: true } }, 
+        SVG: { linebreaks: { automatic:true } }, 
+        displayAlign: "left" });
+</script>	      
     {% include header.html %}
     {% include menu.html %}
     <!-- MAIN CONTENT -->
