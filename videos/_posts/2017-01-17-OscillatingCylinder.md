@@ -1,5 +1,5 @@
 ---
-shortcode: https://youtu.be/7sBPUI-_Ie0
+shortcode: 7sBPUI-_Ie0
 title: Oscillating cylinder
 ---
 
