@@ -6,7 +6,7 @@ title: Blog index - by tag
     {% for tag in tags %}
        {% assign t = tag | first %}
        {% assign posts = tag | last %}
-       <li><a class="tags" href ="/tags.html/#{{ t | downcase }}">{{t | downcase | replace:" ","-" }}</a> has {{ posts | size }} posts</li>
+       <li><a class="tags" href ="/tags.html#{{ t | downcase }}">{{t | downcase | replace:" ","-" }}</a> has {{ posts | size }} posts</li>
     {% endfor %}
 </ul>
 
@@ -14,7 +14,7 @@ title: Blog index - by tag
   {% assign t = tag | first %}
   {% assign posts = tag | last %}
 <div id="tags">
-<a name="{{ t | downcase }}"></a><a href ="/tags.html/#{{ t | downcase }}">{{ t | downcase }}</a>
+<a name="{{ t | downcase }}"></a><a href ="/tags.html#{{ t | downcase }}">{{ t | downcase }}</a>
 </div>
 <ul>
 {% for post in posts %}
