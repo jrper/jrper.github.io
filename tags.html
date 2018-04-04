@@ -10,7 +10,7 @@ title: Blog index - by tag
     {% endfor %}
 </ul>
 
-{% for tag in site.tags %}
+{% for tag in tags %}
   {% assign t = tag | first %}
   {% assign posts = tag | last %}
 <div id="tags">
