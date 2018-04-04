@@ -1,5 +1,6 @@
 ---
 title: Using straight VTK to render text
+tags: python vtk
 ---
 
 Lets write a simple script to display some text in a standard vtk window:

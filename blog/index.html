@@ -1,7 +1,10 @@
 ---
 layout: maths-markdown
-title: My blog
+title: My blog - by most recent
 ---
+
+<a href={{ site.url }}/blog.html>Full index</a> or <a href={{ site.url }}/tags.html>by tag</a>
+<br>
 
 <ul class="posts">
     {% for post in paginator.posts %}
@@ -38,4 +41,4 @@ title: My blog
   {% endif %}
 </div>
 {% endif %}
-<a href={{ site.url }}/blog.html>Full index</a>
+<a href={{ site.url }}/blog.html>Full index</a> or <a href={{ site.url }}/tags.html>by tag</a>

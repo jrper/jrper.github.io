@@ -1,5 +1,6 @@
 ---
 title: Python in parallel with mpi4py
+tag: python
 ---
 
 The module `mpi4py` makes it fairly trivial to make MPI calls within python scripts, by allowing first class python objects to be passed. As an example of a near  do nothing script, consider the following:

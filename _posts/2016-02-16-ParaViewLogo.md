@@ -1,5 +1,6 @@
 ---
 title: Adding a logo to a ParaView window
+tag: paraview
 ---
 
 The vtkLogoWidget class exists to allow logo insertion in standard VTK render instances, but what about in ParaView? It turns out you can still use it fine. Run the following script in the ParaView python shell, or even make it a macro!

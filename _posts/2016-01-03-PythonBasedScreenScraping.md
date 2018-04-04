@@ -1,5 +1,6 @@
 ---
 title: Screen Scraping with python.
+tag: python
 ---
 
 A simple script to screen scrape data from the CricInfo StatsGuru engine can be written in python using the lxml and requests modules. The code looks like

@@ -1,5 +1,6 @@
 ---
 title: A python module for hacking GMSH files
+tags: gmsh vtk
 ---
 
 This module file creates a class containing readers and writers in python for GMSH files, including into and out of VTK. This is heavily based on the original `Gmsh.py` by Carl Osterwisch.

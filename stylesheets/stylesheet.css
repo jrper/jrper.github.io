@@ -474,6 +474,22 @@ Small Device Styles
     background-color: Navy;
 }
 
+#tags a:link, #tags a:visited {
+    background-color: Indigo;
+    color: white;
+    padding: 1px 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+
+#tags a:hover, a:active {
+    color: Aqua;
+    background-color: Navy;
+}
+
 img.TextWrapped {
     float: left;
     margin: 0px;

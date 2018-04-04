@@ -1,5 +1,6 @@
 ---
 title: Git recipes - Part III
+tag: git
 ---
 
 Yesterday we dealt with some git commands which allow it to be used as originally intended. Today we'll move on to some powerful, but dangerous commands which (almost) literally allow developers to rewrite history.

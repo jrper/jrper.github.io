@@ -1,5 +1,6 @@
 ---
 title: Git recipes - Part I
+tag: git
 ---
 
 The utility `git` is the Version Control System of choice within AMCG. Git appears to be coming to dominate the open source version control software world, replacing the centralized `svn` and the now undersupported `bzr`. As an essentially distributed version control framework, `git` can take some effort to learn for people with experience of other software, especially `svn` users, when used in large teams. So, lets begin with some basic recipes for svn users.

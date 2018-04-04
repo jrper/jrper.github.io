@@ -1,11 +1,11 @@
 ---
-title: My blog index
+title: My blog index - by title
 ---
+{% assign posts = site.posts | sort: 'title'%}
 <ul>
-    {% for post in site.posts %}
+    {% for post in posts %}
        <li>
            <a href="{{ post.url }}">{{ post.title }}</a>
        </li>
     {% endfor %}
 </ul>
-

@@ -1,5 +1,6 @@
 ---
 title: Ways to wrap C code for python - Part I
+tag: python
 ---
 
 Lets say you have some C code like the following

@@ -1,5 +1,6 @@
 ---
 title: Git recipes - Part II
+tag: git
 ---
 
 Yesterday we dealt with methods for SVN users to try to pretend they aren't being forced to use git. Today we'll move on to some recipes to take advantage of the strengths of git.
