@@ -1,8 +1,8 @@
-{% if page.tags.size > 0 %}
+{% if include.obj.tags.size > 0 %}
 <br>
 <div id="tags">
 tags:
-{% for t in page.tags %}
+{% for t in include.obj.tags %}
     <a href="/tags.html/#{{ t | downcase | replace:" ","-" }}">{{ t | downcase }}</a>
 {% endfor %}
 </div>

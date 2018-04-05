@@ -23,12 +23,14 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
+     {% include post_nav.html %}
+     <br>
         <div id="title">
           <h1>{{ page.title }}</h1>
         </div>
         <hr>
         {{ page.content }}
-	{% include _tags.md %}
+	{% include _tags.md obj=page %}
       </section>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->

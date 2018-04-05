@@ -1,20 +1,21 @@
 ---
 title: Blog index - by tag
 ---
+
 {% assign tags = site.tags | sort %}
 <ul class="tags">
     {% for tag in tags %}
-       {% assign t = tag | first %}
+       {% assign t = tag | first | downcase %}
        {% assign posts = tag | last %}
-       <li><a class="tags" href ="/tags.html#{{ t | downcase }}">{{t | downcase | replace:" ","-" }}</a> has {{ posts | size }} posts</li>
+       <li><a class="tags" href ="/tags.html#{{ t }}">{{t | replace:" ","-" }}</a> has {{ posts | size }} posts</li>
     {% endfor %}
 </ul>
 
 {% for tag in tags %}
-  {% assign t = tag | first %}
+  {% assign t = tag | first |downcase %}
   {% assign posts = tag | last %}
 <div id="tags">
-<a name="{{ t | downcase }}"></a><a href ="/tags.html#{{ t | downcase }}">{{ t | downcase }}</a>
+<a name="{{ t }}"></a><a href ="/tags.html#{{ t | downcase }}">{{ t }}</a>
 </div>
 <ul>
 {% for post in posts %}

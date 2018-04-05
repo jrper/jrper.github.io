@@ -16,19 +16,14 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-{% if page.previous %}
-<div style="float:left"><a href="{{ page.previous.url }}"> < {{ page.previous.title }}</a></div>
-{% endif %}
-{% if page.next %}
-<div style="float:right"><a href="{{ page.next.url }}">{{ page.next.title }} ></a></div>
-{% endif %}
+     {% include post_nav.html %}
      <br>
         <div style="float:none" id="title">
           <h1>{{ page.title }}</h1>
         </div>
         <hr>
         {{ content }}
-	{% include _tags.md %}
+	{% include _tags.md obj=page %}
       </section>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
