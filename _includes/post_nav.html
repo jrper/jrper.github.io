@@ -1,0 +1,6 @@
+{% if page.previous %}
+<div style="float:left" id="tags"><a href="{{ page.previous.url }}"> <i class="arrow left"></i> {{ page.previous.title | truncate: 40 }}</a></div>
+{% endif %}
+{% if page.next %}
+<div style="float:right" id="tags"><a href="{{ page.next.url }}">{{ page.next.title | truncate: 40 }} <i class="arrow right"></i></a></div>
+{% endif %}
