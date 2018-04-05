@@ -1,4 +1,4 @@
-gems:
+plugins:
   - jekyll-feed
   - jekyll-paginate
 paginate: 10
@@ -13,7 +13,7 @@ defaults:
       layout: "default"
   -
     scope:
-      path: "videos" # an empty string here means all files in the project
+      path: "videos"
     values:
       layout: videos
   -

@@ -3,7 +3,16 @@
 <nav>
 <ul>
 <li><a href="{{ site.url }}/index.html">Home</a></li>
-<li><a href="{{ site.url }}/blog/">Blog</a></li>
+<li >
+    <div id="submenu">
+    <a href="{{ site.url }}/blog/">Blog</a>
+    <ul>
+    <li> <a href="{{ site.url }}/blog/index.html">by date</a></li>
+    <li> <a href="{{ site.url }}/tags.html">by tag</a></li>
+    <li> <a href="{{ site.url }}/blog.html">by title</a></li>
+    </ul>
+    </div>
+</li>
 <li><a href="{{ site.url }}/videos.html">Videos</a></li>
 <li><a href="{{ site.url }}/training.html">Fluidity Training</a></li>
 <li><a href="{{ site.url }}/paraview.html">Paraview Plugins</a></li>

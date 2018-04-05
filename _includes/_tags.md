@@ -1,4 +1,4 @@
-{% if include.obj.tags.size > 0 %}
+{%- if include.obj.tags.size > 0 -%}
 <br>
 <div id="tags">
 tags:
@@ -6,4 +6,4 @@ tags:
     <a href="/tags.html/#{{ t | downcase | replace:" ","-" }}">{{ t | downcase }}</a>
 {% endfor %}
 </div>
-{% endif %}
+{%- endif -%}

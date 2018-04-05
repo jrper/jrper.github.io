@@ -2,29 +2,28 @@
 title: Blog index - by tag
 ---
 
-{% assign tags = site.tags | sort %}
+{%- assign tags = site.tags | sort -%}
 <ul class="tags">
-    {% for tag in tags %}
-       {% assign t = tag | first | downcase %}
-       {% assign posts = tag | last %}
-       <li><a class="tags" href ="/tags.html#{{ t }}">{{t | replace:" ","-" }}</a> has {{ posts | size }} posts</li>
-    {% endfor %}
-</ul>
+{% for tag in tags %}
+   {%- assign t = tag | first | downcase -%}
+   {%- assign posts = tag | last -%}
+   <li><a class="tags" href="/tags.html#{{ t }}">{{t | replace:" ","-" }}</a> has {{ posts | size }} posts</li>
+{% endfor %}</ul>
 
 {% for tag in tags %}
-  {% assign t = tag | first |downcase %}
-  {% assign posts = tag | last %}
-<div id="tags">
-<a name="{{ t }}"></a><a href ="/tags.html#{{ t | downcase }}">{{ t }}</a>
-</div>
-<ul>
-{% for post in posts %}
-  {% if post.tags contains t %}
+  {%- assign t = tag | first |downcase -%}
+  {%- assign posts = tag | last -%}
+      <div id="tags">
+         <a name="{{ t }}"></a><a href ="/tags.html#{{ t | downcase }}">{{ t }}</a>
+      </div>
+      <ul>
+  {% for post in posts %}
+     {% if post.tags contains t %}
   <li>
     <a href="{{ post.url }}">{{ post.title }}</a>
     <span class="date">{{ post.date | date: "%B %-d, %Y"  }}</span>
   </li>
-  {% endif %}
+     {%- endif -%}
 {% endfor %}
 </ul>
 {% endfor %}
