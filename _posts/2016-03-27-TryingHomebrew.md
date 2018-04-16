@@ -1,5 +1,5 @@
 ---
-title: Trying out Hombrew
+title: Trying out Homebrew
 ---
 
 When I bought a new macbook four years ago, I made the decision to migrate from [fink](http://www.finkproject.org) to [macports](https://www.macports.org). Now, having decided to make the upgrade to El Capitan, I'm also experimenting with [homebrew](http://brew.sh). This time however, I'm attempting to run both package managers simultaneously. I'm not, however doing this in parallel (the homebrew people specifically warn against this, and neither system would be particularly happy).
