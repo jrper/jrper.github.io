@@ -1,0 +1,12 @@
+---
+title: My Videos - by title
+layout: default
+---
+{% assign posts = site.categories.videos | sort: 'title'%}
+<ul>
+    {% for post in posts %}
+       <li>
+           <a href="{{ post.url }}">{{ post.title }}</a>
+       </li>
+    {% endfor %}
+</ul>
