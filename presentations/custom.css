@@ -8,3 +8,16 @@ body {
   background: radial-gradient(center, circle cover, #f7fbfc 0%, #b0bce8 100%);
   background-color: #f7fbfc;
 }
+
+body:after {
+    background-image: url("../images/AMCG-logo.png");
+    background-size: 193px 53px;
+    content:"";
+    position: fixed;
+    bottom: 3.5em;
+    left: 3.5em;
+    box-shadow: 5px 5px 10px #000; 
+    display: inline-block;
+    width: 193px; 
+    height: 53px;
+}
