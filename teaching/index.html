@@ -1,0 +1,9 @@
+---
+title: Index of teaching notebooks
+---
+
+<ul>
+{%- for book in site.notebooks -%}
+<li><a href="http://nbviewer.jupyter.org/url/jrper.github.io/teaching/notebooks/{{ book.urlname }}.ipynb">{{ book.title }}</a>: {{ book.description }}</li>
+{%- endfor -%}
+</ul>
