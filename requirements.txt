@@ -1,0 +1,6 @@
+numpy==1.14.1
+matplotlib==2.1
+bqplot==0.10.5
+scipy==1.0.0
+ipywidgets==7.1.2
+ipyleaflet==0.8.1
