@@ -554,7 +554,7 @@ i {
     -webkit-transform: rotate(45deg);
 }
 
-#submenu ul {
+.submenu ul {
   background-color: Aqua;
   color: Navy;
   font-size: 13px;
@@ -572,23 +572,31 @@ i {
           transition: height 1s ease;
 }
 
-#submenu:hover ul {
+.submenu_3item:hover ul {
   height: 62px;
 }
 
-#submenu ul a:link, #submenu ul a:visited{
+.submenu_2item:hover ul {
+  height: 41px;
+}
+
+.submenu_1item:hover ul {
+  height: 20px;
+}
+
+.submenu ul a:link, #submenu ul a:visited{
   color: Navy;
   background-color: Aqua;
   overflow: hidden;
 }
 
-#submenu li a:link, #submenu li a:visited{
+.submenu li a:link, #submenu li a:visited{
   color: Navy;
   background-color: Aqua;
   overflow: hidden;
 }
 
-#submenu li a:hover, #submenu li a:active {
+,submenu li a:hover, #submenu li a:active {
     color: Black;
     background-color: White;
 }
